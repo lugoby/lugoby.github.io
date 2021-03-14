@@ -1,0 +1,40 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Calibri',"Microsoft Yahei UI Light","微軟雅黑","微软雅黑",sans-serif;
+    min-height:100vh;
+    background-color:#fff;
+}
+
+.container{
+    width:100%;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    text-align:center;
+    color:#000;
+}
+
+.container h1{
+    font-size:140px;
+    font-weight:900;
+    letter-spacing:20px;
+    margin:-15px 0px 12px 20px;
+    color:#2594a2;
+}
+
+.container a{
+    text-decoration:none;
+    background:#2594a2aa;
+    color:#fff;
+    padding:18px 55px;
+    display:inline-block;
+    border-radius:25px;
+    font-size:16px;
+    letter-spacing:3.5px;
+    text-transform:uppercase;
+}
+
+.container a:hover{
+    background:#2594a2;
+}

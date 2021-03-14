@@ -1,0 +1,236 @@
+html, body{
+    height:100%;
+    overflow:hidden;
+    font-family:'Calibri',"Microsoft Yahei UI Light","微軟雅黑","微软雅黑",sans-serif;
+}
+
+/* Navigation Bar */
+.navbar{
+    text-transform:uppercase;
+    font-weight:300;
+    font-size:1.2rem;
+    letter-spacing:.025rem;
+    background-color:white!important;
+    border-bottom-color:#D3D3D3!important;
+}
+.navbar-brand img{
+    padding-left:.4rem;
+    height:3rem;
+}
+.navbar-nav li{
+    padding:0 .8rem 0 2rem;
+}
+.navbar-toggler{
+    margin-right:.25rem;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:grey;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover{
+    color:#2594a2;
+    font-weight:800;
+}
+.collapse{
+    max-height:50vh;
+    overflow-y:auto;
+}
+
+/* Bottom Navigation Bar */
+#bottomnav{
+    border-top-color: #D3D3D3!important;
+}
+.navbar-nav .nav-item-left{
+    padding:.3rem 2rem .3rem .8rem;
+}
+.navbar-nav .nav-item-right{
+    padding:0 .8rem 0 2rem;
+}
+.copyright{
+    text-transform:capitalize;
+    font-size:.95rem;
+    letter-spacing:-.025rem;
+    color:grey;
+    text-align:right;
+    padding-left:.3rem;
+}
+svg{
+    width:30px;
+    height:30px;
+    fill:grey;
+}
+svg:hover{
+    fill:#2594a2;
+}
+
+/* Middle Container & Home */
+.container{
+    position:absolute;
+    top:75px;
+    bottom:68px;
+    right:0;
+    left:0;
+    overflow-y:auto;
+    width:100%;
+    max-width:100%;
+    z-index:1;
+}
+.content{
+    padding:4.5rem 0 2rem;
+}
+.logo-text{
+    width:45rem;
+    padding:0 3rem 1.5rem;
+}
+.flex-sm-row{
+    padding:0 2rem;
+}
+.app-store{
+    height:3.5rem;
+    margin:1rem .5rem .5rem;
+}
+.modal-title{
+    color:#2594a2;
+    font-weight:600;
+}
+
+/* Terms & Privacy */
+.terms{
+    width:1000px;
+    max-width:100%;
+    margin:1.8rem auto 2.5rem;
+}
+hr{
+    background-color:#D3D3D3;
+}
+h1{
+    text-align:left;
+    font-size:2.3rem;
+    font-weight:600;
+    color:#2594a2;
+}
+h2{
+    display:inline-block;
+    text-decoration:underline;
+    font-size:1.1rem;
+    font-weight:600;
+    max-width:calc( 100% - 2rem );
+    margin:2.8px 0 16px;
+}
+
+/* Definition List */
+dl{
+    display:table;
+    border-collapse:collapse;
+}
+dl div{
+    display:table-row
+}
+dt{
+    text-align:left;
+    font-weight:600;
+}
+dt, dd{
+    display:table-cell;
+    border:1px solid #D3D3D3;
+    vertical-align:middle; 
+    padding:.3rem;
+}
+
+/* First-level ordered list */
+.ol-h2{
+    counter-reset:item;
+    margin-left:0px;
+    padding-left:0px;
+}
+.ol-h2 .ol-h2-li{
+    display:block;
+}
+.ol-h2 .ol-h2-li:before{ 
+    display:inline-block;
+    vertical-align:top;
+    content:counter(item, decimal) ". ";
+    counter-increment:item;
+    width:2rem;
+    margin-bottom:16px;
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+/* Second-level ordered list */
+.ol-li2{
+    counter-reset:item;
+}
+.ol-li2 .ol-li2-li{
+    display:block;
+    margin-left:1.2rem;
+}
+.ol-li2 .ol-li2-li:before{ 
+    display:inline-block;
+    content:counter(item, lower-alpha) ". ";
+    counter-increment:item;
+    width:2rem;
+    margin-left:-2rem;
+}
+
+/* Third-level ordered list */
+.ol-li3{
+    counter-reset:item;
+}
+.ol-li3 .ol-li3-li{
+    display:block;
+    margin-left:-1rem;
+}
+.ol-li3 .ol-li3-li:before{ 
+    display:inline-block;
+    content:counter(item, upper-roman) ". ";
+    counter-increment:item;
+    width:2.5rem;
+    margin-left:-2.5rem;
+}
+
+/* Third-level unordered list */
+.ul-li3{
+    list-style-type:disc;
+}
+.ul-li3 li{
+    margin-left:-.3rem;
+}
+
+/* Screen Adjustment*/
+@media (max-width:991px){
+    .app-store{
+        height:3.2rem;
+        margin:1rem .5rem .5rem;
+    }
+}
+@media (max-width:767px){
+    .navbar-nav li{
+        padding:.9rem .8rem .6rem 1.6rem;
+    }
+    .navbar-nav .nav-item-left{
+        padding:.3rem 2rem .3rem .2rem;
+    }
+    .copyright{
+        padding-right:.3rem;
+    }
+    .content{
+        padding:3rem 0 2rem;
+    } 
+    .app-store{
+        height:2.8rem;
+        margin:1rem .5rem .5rem;
+    } 
+}
+@media (max-width:575px){
+    .navbar-nav .nav-item-left{
+        padding:.3rem 1.5rem .3rem .2rem;
+    }
+    .content{
+        padding:2rem 0 1rem;
+    }
+    .app-store{
+        width:9.5rem;
+        height:auto;
+        margin:.6rem .5rem .5rem;
+    }
+}
