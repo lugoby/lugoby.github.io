@@ -18,7 +18,7 @@ html, body{
     height:3rem;
 }
 .navbar-nav li{
-    padding:0 .8rem 0 2rem;
+    padding:0 0.8rem 0 1.8rem;
 }
 .navbar-toggler{
     margin-right:.25rem;
@@ -65,7 +65,7 @@ svg:hover{
 /* Middle Container & Home */
 .container{
     position:absolute;
-    top:75px;
+    top:50px;
     bottom:68px;
     right:0;
     left:0;
@@ -78,14 +78,14 @@ svg:hover{
     padding:4.5rem 0 2rem;
 }
 .logo-text{
-    width:45rem;
+    width:33rem;
     padding:0 3rem 1.5rem;
 }
 .flex-sm-row{
-    padding:0 2rem;
+    padding:0 2.8rem;
 }
 .app-store{
-    height:3.5rem;
+    height:3rem;
     margin:1rem .5rem .5rem;
 }
 .modal-title{
@@ -107,6 +107,7 @@ h1{
     font-size:2.3rem;
     font-weight:600;
     color:#2594a2;
+    padding-top: 33px;
 }
 h2{
     display:inline-block;
@@ -199,7 +200,7 @@ dt, dd{
 /* Screen Adjustment*/
 @media (max-width:991px){
     .app-store{
-        height:3.2rem;
+        height:3rem;
         margin:1rem .5rem .5rem;
     }
 }
@@ -214,7 +215,7 @@ dt, dd{
         padding-right:.3rem;
     }
     .content{
-        padding:3rem 0 2rem;
+        padding:3.5rem 0 2rem;
     } 
     .app-store{
         height:2.8rem;
@@ -226,10 +227,10 @@ dt, dd{
         padding:.3rem 1.5rem .3rem .2rem;
     }
     .content{
-        padding:2rem 0 1rem;
+        padding:2.5rem 0 1rem;
     }
     .app-store{
-        width:9.5rem;
+        width:9rem;
         height:auto;
         margin:.6rem .5rem .5rem;
     }

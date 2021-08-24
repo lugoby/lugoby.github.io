@@ -1,0 +1,193 @@
+.membership-title{
+    font-weight: 400;
+    font-size: 1.4em;
+    padding: 50px 0px 5px 0px;
+    text-align: center;
+    color: black;
+}
+
+.text-strong{
+    font-weight: 600;
+    color: #2594A2!important;
+}
+
+.membership-fee{
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+.membership-period{
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0px; 
+    color: black;
+}
+
+.membership-type{
+    margin: 25px 0px 0px 0px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.feature-section {
+    margin: 30px 0 0 0;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
+
+.feature img {
+    height: 1em;
+    width: 1em;
+    margin-right: .5rem;
+}
+
+.feature.inactive {
+    color: #999;
+    text-decoration-line: line-through;
+}
+
+.membership-terms-wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 24px auto 50px auto;
+    padding: 0px 30px 0px 0px;
+}
+
+.membership-terms-heading{
+    text-align: justify;
+    font-size: 0.75em;
+    padding-left: 30px;
+    color: darkgrey;
+    text-decoration: underline;
+}
+
+.membership-terms{
+    text-align: justify;
+    font-size: 0.75em;
+    padding-top: 7px;
+    color: darkgrey;
+}
+
+.wrapper{
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wrapper .table{
+    background: #fff;
+    width: 100%;
+    padding: 30px 30px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.table .btn{
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 28px;
+    justify-content: center;
+}
+
+.table .btn button{
+    width: 80%;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.basic .btn button{
+    border: 2px solid #2594A2;
+    background: #fff;
+    color: #2594A2;
+}
+
+.basic .btn button:hover{
+    background: #2594A2;
+    color: #fff;
+}
+
+.pro .btn button{
+    background: #2594A2;
+}
+
+.pro .btn button:hover{
+    background: #1c7885;
+}
+
+.table .coming-ribbon{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    overflow: hidden;
+}
+
+.table .coming-ribbon::before,
+.table .coming-ribbon::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    display: block;
+    border: 7px solid #1c7885;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.table .coming-ribbon::before{
+    top: 0px;
+    right: 15px;
+}
+
+.table .coming-ribbon::after{
+    bottom: 15px;
+    left: 0px;
+}
+
+.table .coming-ribbon span{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: rotate(-45deg);
+    width: 200px;
+    background: #2594A2;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 1020px) {
+    .wrapper .table{
+        width: calc(50% - 30px);
+        margin-bottom: 40px;
+    }
+    .membership-terms-wrapper{
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper .table{
+        width: 100%;
+    }
+}
